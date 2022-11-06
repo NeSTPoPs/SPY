@@ -10,6 +10,7 @@ using UnityEngine.Networking;
 using System;
 using UnityEngine.Events;
 using System.Runtime.InteropServices;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Manage main menu to launch a specific mission
@@ -126,6 +127,16 @@ public class TitleScreenSystem : FSystem {
 			foreach (string levelRaw in levelsListRaw.levelPath)
 				MainLoop.instance.StartCoroutine(GetLevelWebRequest(Application.streamingAssetsPath + "/" + levelRaw));
 		}
+	}
+
+	// Editor menu
+	public void setEditorLevelScene() {
+		SceneManager.LoadScene("LevelEditor", LoadSceneMode.Single);
+	}
+
+	// Main menu
+	public void setTitleScreenScene() {
+		SceneManager.LoadScene("TitleScreen", LoadSceneMode.Single);
 	}
 
 	private IEnumerator GetLevelWebRequest(string levelUri)

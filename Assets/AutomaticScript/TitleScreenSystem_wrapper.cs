@@ -24,6 +24,16 @@ public class TitleScreenSystem_wrapper : BaseWrapper
 		MainLoop.initAppropriateSystemField (system, "scenarioContent", scenarioContent);
 	}
 
+	public void setEditorLevelScene()
+	{
+		MainLoop.callAppropriateSystemMethod (system, "setEditorLevelScene", null);
+	}
+
+	public void setTitleScreenScene()
+	{
+		MainLoop.callAppropriateSystemMethod (system, "setTitleScreenScene", null);
+	}
+
 	public void importScenario(System.String content)
 	{
 		MainLoop.callAppropriateSystemMethod (system, "importScenario", content);
