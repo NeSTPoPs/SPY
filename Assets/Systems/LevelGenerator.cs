@@ -115,6 +115,12 @@ public class LevelGenerator : FSystem {
 					createDoor(int.Parse(child.Attributes.GetNamedItem("posX").Value), int.Parse(child.Attributes.GetNamedItem("posY").Value),
 					(Direction.Dir)int.Parse(child.Attributes.GetNamedItem("direction").Value), int.Parse(child.Attributes.GetNamedItem("slotId").Value));
 					break;
+				// *******************************************************************************************************************************
+				case "treadmill":
+					createTreadmill(int.Parse(child.Attributes.GetNamedItem("posX").Value), int.Parse(child.Attributes.GetNamedItem("posY").Value),
+					(Direction.Dir)int.Parse(child.Attributes.GetNamedItem("direction").Value));
+					break;
+				// *******************************************************************************************************************************
 				case "player":
 				case "enemy":
 					string nameAgentByUser = "";
@@ -313,6 +319,20 @@ public class LevelGenerator : FSystem {
 			activable.AddComponent<TurnedOn>();
 		GameObjectManager.bind(activable);
 	}
+
+	// *******************************************************************************************************************************
+	// TREADMILL 
+	private void createTreadmill(int gridX, int gridY, Direction.Dir orientation)
+	{
+		GameObject treadmill = Object.Instantiate<GameObject>(Resources.Load("Prefabs/Treadmill") as GameObject, gameData.LevelGO.transform.position + new Vector3(gridY * 3, 1.5f, gridX * 3), Quaternion.Euler(0, 0, 0), gameData.LevelGO.transform);
+
+		treadmill.GetComponent<Position>().x = gridX;
+		treadmill.GetComponent<Position>().y = gridY;
+		treadmill.GetComponent<Direction>().direction = orientation;
+
+		GameObjectManager.bind(treadmill);
+	}
+	// *******************************************************************************************************************************
 
 	private void createSpawnExit(int gridX, int gridY, bool type){
 		GameObject spawnExit;

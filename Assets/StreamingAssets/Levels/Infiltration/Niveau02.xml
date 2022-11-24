@@ -37,6 +37,8 @@
   <door posY="5" posX="1" direction="0" slotId="0" />
   <door posY="5" posX="2" direction="0" slotId="0" />
   <door posY="5" posX="3" direction="0" slotId="0" />
+  <treadmill posY="3" posX="2" direction="0"/>
+  <treadmill posY="4" posX="1" direction="0"/>
   <player associatedScriptName="Karl" posY="4" posX="2" direction="0" />
   <script name="Karl" editMode="0" />
   <score twoStars="5750" threeStars="6750"/>
