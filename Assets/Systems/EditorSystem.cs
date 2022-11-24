@@ -21,6 +21,8 @@ public class EditorSystem : FSystem {
 
 	private bool mousePressed;
 
+	private string editMode;
+
 	public EditorSystem()
 	{
 		instance = this;
@@ -61,6 +63,7 @@ public class EditorSystem : FSystem {
 	}
 
 	private int getGridIndexWithPos(Vector2 position){
+		//Return the grid index in function of the position on screen set as parameters
 		int height = Screen.height;
 		int width = Screen.width;
 		float go_side = height/gridSize;
@@ -90,6 +93,7 @@ public class EditorSystem : FSystem {
 	}
 
 	private GameObject InstantiateOnConvas(GameObject go){
+		//Instantiate a gameobject instantly on the convas
 		GameObject res = GameObject.Instantiate(go);
 		GameObjectManager.bind(res);
 		GameObjectManager.setGameObjectParent(res, canvas, true);
@@ -104,6 +108,7 @@ public class EditorSystem : FSystem {
 		selectedInstance = InstantiateOnConvas(initialInstance);
 		RectTransform objectRectTransform = canvas.GetComponent<RectTransform> ();
 		moveGhost = false;
+		editMode = "draw";
 	}
 
 	private void UpdateGhostPosition(){
@@ -125,7 +130,7 @@ public class EditorSystem : FSystem {
 			mousePressed = false;
 		}
 
-		if(Input.mousePosition.x > 100){
+		if(Input.mousePosition.x > 0.2*Screen.width && Input.mousePosition.x < Screen.width - 0.2*Screen.width && editMode == "draw"){
 			if(moveGhost == false){
 				moveGhost = true;
 				selectedInstance.SetActive(true);
@@ -144,12 +149,12 @@ public class EditorSystem : FSystem {
 			
 		}
 
-		if(Input.GetMouseButtonDown(1)){
+		if(Input.GetMouseButtonDown(1) && editMode == "draw"){
 			//Rotate instance
 			selectedInstance.transform.Rotate(new Vector3(0,0,90));
 		}
 
-		if(mousePressed){
+		if(mousePressed && editMode == "draw"){
 			int index = getGridIndexWithPos(Input.mousePosition);
 			if(index != -1) {
 				replaceGridItem(selectedInstance, index);
@@ -158,9 +163,24 @@ public class EditorSystem : FSystem {
 	}
 
 	public void selectInstance(GameObject go){
+		//Change the selected instance as the go set as parameter
 		GameObjectManager.unbind(selectedInstance);
 		GameObject.Destroy(selectedInstance);
 		selectedInstance = InstantiateOnConvas(go);
 		selectedInstance.SetActive(false);
+	}
+
+	public void selectDrawMode(){
+		//Change to draw mode
+		editMode = "draw";
+	}
+
+	public void selectEditMode(){
+		//Change to edit mode
+		editMode = "edit";
+	}
+
+	public void saveFile(string fileName){
+		
 	}
 }

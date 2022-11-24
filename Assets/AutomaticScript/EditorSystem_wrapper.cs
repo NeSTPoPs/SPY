@@ -19,4 +19,19 @@ public class EditorSystem_wrapper : BaseWrapper
 		MainLoop.callAppropriateSystemMethod (system, "selectInstance", go);
 	}
 
+	public void selectDrawMode()
+	{
+		MainLoop.callAppropriateSystemMethod (system, "selectDrawMode", null);
+	}
+
+	public void selectEditMode()
+	{
+		MainLoop.callAppropriateSystemMethod (system, "selectEditMode", null);
+	}
+
+	public void saveFile(System.String fileName)
+	{
+		MainLoop.callAppropriateSystemMethod (system, "saveFile", fileName);
+	}
+
 }
