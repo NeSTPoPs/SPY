@@ -63,6 +63,7 @@ public class MoveSystem : FSystem {
     {
 		if (gameData.gameSpeed_current == gameData.gameSpeed_default)
 		{
+
 			go.GetComponent<Animator>().SetFloat("Walk", 1f);
 			go.GetComponent<Animator>().SetFloat("Run", -1f);
 		}

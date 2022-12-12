@@ -6,6 +6,7 @@ using UnityEngine;
 /// Manage steps (automatic simulation or controled by player)
 /// </summary>
 public class StepSystem : FSystem {
+    public static StepSystem instance;
 
     private Family f_newEnd = FamilyManager.getFamily(new AllOfComponents(typeof(NewEnd)));
     private Family f_newStep = FamilyManager.getFamily(new AllOfComponents(typeof(NewStep)));
@@ -21,6 +22,7 @@ public class StepSystem : FSystem {
 
     protected override void onStart()
     {
+        instance = this;
         nbStep = 0;
         newStepAskedByPlayer = false;
         GameObject go = GameObject.Find("GameData");
