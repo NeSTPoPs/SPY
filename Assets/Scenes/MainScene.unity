@@ -1668,7 +1668,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 649317142}
   m_HandleRect: {fileID: 649317141}
   m_Direction: 0
-  m_Value: 0
+  m_Value: -0.0000026226044
   m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -5470,6 +5470,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 361349215}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &361075426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5677,6 +5689,7 @@ GameObject:
   - component: {fileID: 361349240}
   - component: {fileID: 361349241}
   - component: {fileID: 361349242}
+  - component: {fileID: 361349243}
   m_Layer: 0
   m_Name: Main_Loop
   m_TagString: Untagged
@@ -5820,6 +5833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playButtonAmount: {fileID: 2143097543}
   endPanel: {fileID: 1306532945}
+  mloop: {fileID: 361349228}
 --- !u!114 &361349225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5934,6 +5948,10 @@ MonoBehaviour:
   - _typeAssemblyQualifiedName: ScrollSystem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     _typeFullName: ScrollSystem
+    _pause: 0
+  - _typeAssemblyQualifiedName: SendStatements, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    _typeFullName: SendStatements
     _pause: 0
   _lateUpdateSystemDescriptions:
   - _typeAssemblyQualifiedName: HighLightSystem, Assembly-CSharp, Version=0.0.0.0,
@@ -6259,6 +6277,18 @@ MonoBehaviour:
   moveSpeed: 0
   footSlow: {fileID: 0}
   footSpeed: {fileID: 0}
+--- !u!114 &361349243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361349215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32226af455263944e8e34d13d82fdccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &371440127
 GameObject:
   m_ObjectHideFlags: 0
@@ -8894,7 +8924,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 665381104}
   m_HandleRect: {fileID: 665381103}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -11421,6 +11451,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1410401872}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 361349243}
+        m_TargetAssemblyTypeName: SendStatements_wrapper, Assembly-CSharp
+        m_MethodName: pushedPause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

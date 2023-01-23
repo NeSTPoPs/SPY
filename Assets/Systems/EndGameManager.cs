@@ -24,6 +24,9 @@ public class EndGameManager : FSystem {
 	public GameObject playButtonAmount;
 	public GameObject endPanel;
 
+	public MainLoop mloop;
+		 
+
 	public EndGameManager()
 	{
 		instance = this;
@@ -47,6 +50,8 @@ public class EndGameManager : FSystem {
 		f_playingMode.addExitCallback(delegate {
 			MainLoop.instance.StartCoroutine(delayNoMoreAttemptDetection());
 		});
+
+		//mloop = GameObject.FindObjectOfType<MainLoop>();
 	}
 
 	private IEnumerator delayCheckEnd()
@@ -193,6 +198,12 @@ public class EndGameManager : FSystem {
 			endPanel.GetComponent<AudioSource>().clip = Resources.Load("Sound/LoseSound") as AudioClip;
 			endPanel.GetComponent<AudioSource>().loop = true;
 			endPanel.GetComponent<AudioSource>().Play();
+		}
+
+		if(mloop != null)
+        {
+			SendStatements_wrapper ssw = mloop.GetComponent<SendStatements_wrapper>();
+			ssw.sendStatement();
 		}
 	}
 
