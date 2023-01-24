@@ -12,18 +12,28 @@ public class ModeManager : FSystem {
 
 	public static ModeManager instance;
 
-    public ModeManager()
+	public MainLoop mloop;
+
+	SendStatements_wrapper ssw;
+
+	public ModeManager()
 	{
 		instance = this;
 	}
 
 	protected override void onStart()
 	{
+
 		f_playingMode.addEntryCallback(delegate { 
 			// remove all EditMode
 			foreach(GameObject editModeGO in f_editingMode)
 				foreach (EditMode em in editModeGO.GetComponents<EditMode>())
 					GameObjectManager.removeComponent(em);
+			if (mloop != null)
+			{
+				SendStatements_wrapper ssw = mloop.GetComponent<SendStatements_wrapper>();
+				ssw.pause_Timer();
+			}
 		});
 
 		f_editingMode.addEntryCallback(delegate {
@@ -31,6 +41,11 @@ public class ModeManager : FSystem {
 			foreach (GameObject editModeGO in f_playingMode)
 				foreach (PlayMode em in editModeGO.GetComponents<PlayMode>())
 					GameObjectManager.removeComponent(em);
+			if (mloop != null)
+			{
+				SendStatements_wrapper ssw = mloop.GetComponent<SendStatements_wrapper>();
+				ssw.start_Timer();
+			}
 		});
 	}
 

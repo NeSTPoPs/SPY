@@ -1,10 +1,75 @@
 {
     "action": {},
-    "activity": {},
+    "activity": {
+        "value": {
+            "description": {
+                "en-US": "just a value"
+            },
+            "id": "https://www.lip6.fr/mocah/???/value",
+            "name": {
+                "en-US": "value"
+            }
+        }
+    },
     "content": {},
     "direction": {},
     "domain": {},
-    "extension": {},
+    "extension": {
+        "campagne": {
+            "description": {
+                "en-US": "campagne of the level"
+            },
+            "id": "https://www.lip6.fr/mocah/???/campagne",
+            "name": {
+                "en-US": "campagne"
+            }
+        },
+        "level": {
+            "description": {
+                "en-US": "level played"
+            },
+            "id": "https://www.lip6.fr/mocah/???/level",
+            "name": {
+                "en-US": "level"
+            }
+        },
+        "meilleurscore": {
+            "description": {
+                "en-US": "best score obtainable for this level"
+            },
+            "id": "https://www.lip6.fr/mocah/???/scoremaxniveau",
+            "name": {
+                "en-US": "meilleurscore"
+            }
+        },
+        "nbstars": {
+            "description": {
+                "en-US": "number of stars the player got on this level"
+            },
+            "id": "https://www.lip6.fr/mocah/???/nb_stars",
+            "name": {
+                "en-US": "nbstars"
+            }
+        },
+        "score": {
+            "description": {
+                "en-US": "score obtained by the player on this level"
+            },
+            "id": "https://www.lip6.fr/mocah/???/score",
+            "name": {
+                "en-US": "score"
+            }
+        },
+        "temps": {
+            "description": {
+                "en-US": "play time (dialog and execution excluded)"
+            },
+            "id": "https://www.lip6.fr/mocah/???/temps",
+            "name": {
+                "en-US": "temps"
+            }
+        }
+    },
     "focus": {},
     "grade": {},
     "link": {},

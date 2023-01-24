@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using FYFY;
+using DIG.GBLXAPI;
+using System.Collections.Generic;
 using System.Collections;
 using TMPro;
 using System.IO;
@@ -203,9 +205,24 @@ public class EndGameManager : FSystem {
 		if(mloop != null)
         {
 			SendStatements_wrapper ssw = mloop.GetComponent<SendStatements_wrapper>();
+			ssw.pause_Timer();
 			ssw.sendStatement();
 		}
 	}
+
+	/*private void sendStatement()
+	{
+		Debug.Log(GBL_Interface.playerName + " Send Statement sent");
+		GameObjectManager.addComponent<ActionPerformedForLRS>(MainLoop.instance.gameObject, new
+		{
+			verb = "interacted",
+			objectType = "value",
+			activityExtensions = new Dictionary<string, string>() {
+			  { "action", "test" }
+			}
+		});
+	}*/
+
 
 	// Gére le nombre d'étoile à afficher selon le score obtenue
 	private void setScoreStars(int score, Transform scoreCanvas)
@@ -245,6 +262,27 @@ public class EndGameManager : FSystem {
 			PlayerPrefs.SetInt(gameData.levelToLoad + gameData.scoreKey, scoredStars);
 			PlayerPrefs.Save();
 		}
+
+		if (mloop != null)
+		{
+			//SendStatements_wrapper ssw = mloop.GetComponent<SendStatements_wrapper>();
+			registerScore(score, gameData.levelToLoadScore[0], scoredStars);
+			//score, gameData.levelToLoadScore[0], scoredStars
+		}
+	}
+
+	private void registerScore(int score, int scorMaxNiv, int nb_stars)
+    {
+		GameObjectManager.addComponent<ActionPerformedForLRS>(MainLoop.instance.gameObject, new
+		{
+			verb = "interacted",
+			objectType = "value",
+			activityExtensions = new Dictionary<string, string>() {
+				{ "score" , score.ToString() },
+				{ "meilleurscore" , scorMaxNiv.ToString() },
+				{ "nbstars" , nb_stars.ToString() }
+			}
+		});
 	}
 
 	// Cancel End (see ReloadState button in editor)

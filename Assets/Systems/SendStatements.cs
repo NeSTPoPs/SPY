@@ -13,6 +13,12 @@ public class SendStatements : FSystem {
     public static SendStatements instance;
 
     private int nb_paused;
+    private float timer;
+    private float mini_timer;
+
+    public int score;
+    public int scoreMaxNiveau;
+    public int nb_stars;
 
     public SendStatements()
     {
@@ -21,9 +27,15 @@ public class SendStatements : FSystem {
 	
 	protected override void onStart()
     {
+
 		initGBLXAPI();
         nb_paused = 0;
+        timer = 0;
+        mini_timer = 0;
+        start_Timer();
     }
+
+ 
 
     public void initGBLXAPI()
     {
@@ -81,19 +93,64 @@ public class SendStatements : FSystem {
         }
 	}
 
-    public void sendStatement()
-    {
+    private void autre() {
         Debug.Log(GBL_Interface.playerName + " Send Statement sent");
         GameObjectManager.addComponent<ActionPerformedForLRS>(MainLoop.instance.gameObject, new
         {
-            verb = "mastered",
-            objectType = "difficulty",
-            extension = "progress"
+            verb = "interacted",
+            activity = "value"
         });
+    }
+
+    public void sendStatement()
+    {
+        GameObject gameDataGO = GameObject.Find("GameData");
+        GameData gameData = gameDataGO.GetComponent<GameData>();
+        string[] titre = (gameData.levelToLoad).Split('/');
+        string campagne = titre[titre.Length - 2];
+        string levelName = (titre[titre.Length - 1]).Split('.')[0];
+        Debug.Log(GBL_Interface.playerName + " Send Statement sent");
+        Debug.Log("Time : " + timer.ToString());
+        GameObjectManager.addComponent<ActionPerformedForLRS>(MainLoop.instance.gameObject, new
+        {
+            verb = "interacted",
+            objectType = "value",
+            //activity = "value",
+            activityExtensions = new Dictionary<string, string>() {
+                { "campagne" , campagne },
+                { "level" , levelName },
+                { "temps" , timer.ToString() },
+                { "score" , score.ToString() },
+                { "meilleurscore" , scoreMaxNiveau.ToString() },
+                { "nbstars" , nb_stars.ToString() },
+              { "action", nb_paused.ToString() }
+            }
+        });
+     }
+
+    public void start_Timer()
+    {
+        Debug.Log("START TIMER");
+        mini_timer = Time.time;
+    }
+
+    public void pause_Timer()
+    {
+        Debug.Log("PAUSE TIMER");
+        float pause = Time.time;
+        timer = timer + (pause - mini_timer);
     }
 
     public void pushedPause()
     {
         nb_paused += 1;
+    }
+
+    public void registerScore(int score, int scoreMaxNiveau, int nb_stars)
+    {
+        //int score, int scoreMaxNiveau, int nb_stars
+        this.score = score;
+        this.scoreMaxNiveau = scoreMaxNiveau;
+        this.nb_stars = nb_stars;
     }
 }

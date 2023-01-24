@@ -3,9 +3,11 @@ using FYFY;
 
 public class ModeManager_wrapper : BaseWrapper
 {
+	public FYFY.MainLoop mloop;
 	private void Start()
 	{
 		this.hideFlags = HideFlags.NotEditable;
+		MainLoop.initAppropriateSystemField (system, "mloop", mloop);
 	}
 
 	public void setPlayingMode()
