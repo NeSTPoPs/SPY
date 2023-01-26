@@ -567,7 +567,7 @@ public class EditorSystem : FSystem {
         string name = go.name; //0 = facing north | 1 = facing south | 2 = facing west | 3 = facing east
         if (name.Contains("Treadmill"))
             orientation = 2;
-        if (name.Contains("Guard") || name.Contains("Door"))
+        if (name.Contains("Guard") || name.Contains("Door") || name.Contains("Spawn"))
             orientation = 0;
     }
 
