@@ -66,6 +66,8 @@ public class EditorSystem : FSystem {
 
 	private GameObject[] grid;
 
+    private int orientation;
+
 	private string editMode;
     private string previousMode;
     private string scenarioPath;
@@ -86,6 +88,7 @@ public class EditorSystem : FSystem {
         RectTransform objectRectTransform = canvas.GetComponent<RectTransform>();
         moveGhost = false;
         editMode = "draw";
+        orientation = 0;
         if (!GameObject.Find("GameData"))
         {
             gameData = UnityEngine.Object.Instantiate(prefabGameData);
@@ -149,6 +152,7 @@ public class EditorSystem : FSystem {
         if (Input.GetMouseButtonDown(1) && editMode == "draw")
         {
             //Rotate instance
+            orientation = NextOrientation(orientation);
             selectedInstance.transform.Rotate(new Vector3(0, 0, 90));
         }
 
@@ -246,11 +250,17 @@ public class EditorSystem : FSystem {
 		}
 		GameObject.Destroy(grid[gridIndex]);
 		grid[gridIndex] = new_go;
-		
-		//grid[gridIndex].GetComponent<RawImage>().texture = go.GetComponent<RawImage>().texture; 
-		//grid[gridIndex].transform.rotation = go.transform.rotation;
 
-	}
+        OrientableEdit orientation_go = new_go.GetComponent<OrientableEdit>();
+        if (orientation_go)
+        {
+            orientation_go.direction = orientation;
+        }
+
+        //grid[gridIndex].GetComponent<RawImage>().texture = go.GetComponent<RawImage>().texture; 
+        //grid[gridIndex].transform.rotation = go.transform.rotation;
+
+    }
 
 	private GameObject InstantiateOnConvas(GameObject go){
 		//Instantiate a gameobject instantly on the convas
@@ -553,7 +563,13 @@ public class EditorSystem : FSystem {
 		GameObject.Destroy(selectedInstance);
 		selectedInstance = InstantiateOnConvas(go);
 		selectedInstance.SetActive(false);
-	}
+        orientation = 1;
+        string name = go.name; //0 = facing north | 1 = facing south | 2 = facing west | 3 = facing east
+        if (name.Contains("Treadmill"))
+            orientation = 2;
+        if (name.Contains("Guard") || name.Contains("Door"))
+            orientation = 0;
+    }
 
 	public void selectDrawMode(){
 		//Change to draw mode
@@ -687,6 +703,25 @@ public class EditorSystem : FSystem {
         {
             buttonInputField.text = activeButton.Id.ToString();
             boutonPannelToggle.isOn = activeButton.State == 1;
+        }
+    }
+
+    private int NextOrientation(int orientation)
+    {
+        //0 = facing north | 1 = facing south | 2 = facing west | 3 = facing east
+        switch (orientation)
+        {
+            case 1:
+                return 3;
+            case 3:
+                return 0;
+            case 0:
+                return 2;
+            case 2:
+                return 1;
+            default:
+                Debug.Log("Unknown orientation " + orientation.ToString());
+                return 0;
         }
     }
     

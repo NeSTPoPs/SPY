@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<scenario>
+  <level name="CustomLevels/TESTSCENARIO/TESTLEVEL.xml" />
+  <level name="CustomLevels/TESTSCENARIO/TEST_Treadmill.xml" />
+  <level name="CustomLevels/TESTSCENARIO/TEST_Orientation.xml" />
+</scenario>
