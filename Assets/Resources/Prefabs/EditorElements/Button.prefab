@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &791244489312446047
+--- !u!1001 &8788746779869676486
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 4651563640395218938, guid: b90d525e87420d33a92c291f05443f24, type: 3}
       propertyPath: m_Texture
       value: 
-      objectReference: {fileID: 2800000, guid: 7547ceefc780ad4eaa9aa9b4be7f8def, type: 3}
+      objectReference: {fileID: 2800000, guid: b48f7bbd67de8d14280554e1b0164729, type: 3}
     - target: {fileID: 6234203395749432387, guid: b90d525e87420d33a92c291f05443f24, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -97,38 +97,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9128112280029713949, guid: b90d525e87420d33a92c291f05443f24, type: 3}
       propertyPath: m_Name
-      value: Door
+      value: Button
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b90d525e87420d33a92c291f05443f24, type: 3}
---- !u!1 &8383030049652699202 stripped
+--- !u!1 &529867161107224027 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9128112280029713949, guid: b90d525e87420d33a92c291f05443f24, type: 3}
-  m_PrefabInstance: {fileID: 791244489312446047}
+  m_PrefabInstance: {fileID: 8788746779869676486}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &-8831351090332254236
+--- !u!114 &-5653381218591466596
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8383030049652699202}
+  m_GameObject: {fileID: 529867161107224027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bfca0695ae27f65994ee0b058be83ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Id: 0
+  State: 1
+--- !u!114 &9205105638464108690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529867161107224027}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7eec57c9820fc2b4d9c06108287a3c72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 0
---- !u!114 &-3470638968323981846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8383030049652699202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b86ff8e69ff72e180bd60bdf005ddb49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Id: 0
