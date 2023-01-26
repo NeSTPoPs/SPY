@@ -39,6 +39,7 @@ public class EditorSystem : FSystem {
     public GameObject AddLevelPannel;
     public GameObject ObjectInfoPannel;
     public GameObject RobotPannel;
+    public GameObject RightContentLevelPannel;
 
     public GameObject BlockLimits;
     
@@ -726,6 +727,24 @@ public class EditorSystem : FSystem {
                 return 0;
         }
     }
+
+    public void AddDialog(GameObject dialogPrefab)
+    {
+        GameObject new_go = GameObject.Instantiate(dialogPrefab);
+        GameObjectManager.bind(new_go);
+        GameObjectManager.setGameObjectParent(new_go, RightContentLevelPannel, false);
+        GameObjectManager.setGameObjectState(new_go, true);
+    }
+
+    public void RemoveDialog(GameObject go)
+    {
+        if (GameObjectManager.isBound(go))
+        {
+            GameObjectManager.unbind(go);
+        }
+        GameObject.Destroy(go);
+
+    }
     
     public void SaveLevel()
     {
@@ -741,7 +760,16 @@ public class EditorSystem : FSystem {
         }
 
         string map = "";
-        string dialogs = "<dialog text =\"Level : "+levelInputField.text+"\" />\n";
+        string dialogs = "";
+        foreach (Transform child in RightContentLevelPannel.transform)
+        {
+            if (child.name == "DialogPrefab(Clone)")
+            {
+                GameObject inputGameObject = child.Find("DialogInput").gameObject;
+                string message = inputGameObject.GetComponent<TMP_InputField>().text;
+                dialogs += "<dialog text =\"" + message + "\" />\n";
+            }
+        }
         string executionLimit = "";
         string blockLimits = "";
         string players = "";

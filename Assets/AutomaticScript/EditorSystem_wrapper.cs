@@ -22,6 +22,7 @@ public class EditorSystem_wrapper : BaseWrapper
 	public UnityEngine.GameObject AddLevelPannel;
 	public UnityEngine.GameObject ObjectInfoPannel;
 	public UnityEngine.GameObject RobotPannel;
+	public UnityEngine.GameObject RightContentLevelPannel;
 	public UnityEngine.GameObject BlockLimits;
 	public UnityEngine.GameObject FurniturePannel;
 	public UnityEngine.GameObject DoorPannel;
@@ -49,6 +50,7 @@ public class EditorSystem_wrapper : BaseWrapper
 		MainLoop.initAppropriateSystemField (system, "AddLevelPannel", AddLevelPannel);
 		MainLoop.initAppropriateSystemField (system, "ObjectInfoPannel", ObjectInfoPannel);
 		MainLoop.initAppropriateSystemField (system, "RobotPannel", RobotPannel);
+		MainLoop.initAppropriateSystemField (system, "RightContentLevelPannel", RightContentLevelPannel);
 		MainLoop.initAppropriateSystemField (system, "BlockLimits", BlockLimits);
 		MainLoop.initAppropriateSystemField (system, "FurniturePannel", FurniturePannel);
 		MainLoop.initAppropriateSystemField (system, "DoorPannel", DoorPannel);
@@ -199,6 +201,16 @@ public class EditorSystem_wrapper : BaseWrapper
 	public void LoadButtonGo()
 	{
 		MainLoop.callAppropriateSystemMethod (system, "LoadButtonGo", null);
+	}
+
+	public void AddDialog(UnityEngine.GameObject dialogPrefab)
+	{
+		MainLoop.callAppropriateSystemMethod (system, "AddDialog", dialogPrefab);
+	}
+
+	public void RemoveDialog(UnityEngine.GameObject go)
+	{
+		MainLoop.callAppropriateSystemMethod (system, "RemoveDialog", go);
 	}
 
 	public void SaveLevel()

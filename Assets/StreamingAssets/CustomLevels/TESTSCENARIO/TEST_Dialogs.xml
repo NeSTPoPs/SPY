@@ -1,15 +1,22 @@
 <?xml version="1.0"?>
 <level>
   <map>
-    <line><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /></line>
-    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "2" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
-    <line><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /></line>
     <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
-    <line><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /></line>
-    <line><cell value= "3" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
-    <line><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "3" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "2" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
   </map>
   <dialogs>
+<dialog text ="1" />
+<dialog text ="2" />
+<dialog text ="3" />
+<dialog text ="4" />
+<dialog text ="This is a message" />
+<dialog text ="This is a second message" />
+<dialog text ="Last message" />
   </dialogs>
   <blockLimits>
     <blockLimit blockType="Forward" limit="-1" />
@@ -32,15 +39,6 @@
     <blockLimit blockType="FieldGate" limit="-1" />
     <blockLimit blockType="Exit" limit="-1" />
   </blockLimits>
-  <console state="0" posY="6" posX="0" direction="2" >
-    <slot slotId="2" />
-  </console>
-  <door posY="1" posX="1" slotId ="0" direction="2" />
-  <door posY="1" posX="5" slotId ="0" direction="3" />
-  <door posY="3" posX="1" slotId ="1" direction="2" />
-  <door posY="3" posX="5" slotId ="0" direction="3" />
-  <door posY="5" posX="1" slotId ="2" direction="2" />
-  <door posY="5" posX="5" slotId ="0" direction="3" />
-  <player associatedScriptName="Alessia" posY="1" posX="3" direction="1" />
+  <player associatedScriptName="Karl" posY="4" posX="3" direction="0" />
 <score twoStars="3000" threeStars="4500" />
 </level>
