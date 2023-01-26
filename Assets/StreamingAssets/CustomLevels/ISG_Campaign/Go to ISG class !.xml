@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <level>
   <map>
-    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "3" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
-    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /></line>
     <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "2" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
-    <line><cell value= "3" /><cell value= "0" /><cell value= "2" /><cell value= "1" /><cell value= "2" /><cell value= "0" /><cell value= "3" /></line>
-    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "2" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /></line>
     <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
-    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "3" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "3" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /></line>
   </map>
   <dialogs>
-<dialog text ="Level : " />
+<dialog text ="Level : Go to ISG class !" />
   </dialogs>
   <blockLimits>
     <blockLimit blockType="Forward" limit="-1" />
@@ -33,9 +33,15 @@
     <blockLimit blockType="FieldGate" limit="-1" />
     <blockLimit blockType="Exit" limit="-1" />
   </blockLimits>
-  <player associatedScriptName="Karl4" posY="2" posX="3" direction="0" />
-  <player associatedScriptName="Karl3" posY="3" posX="2" direction="3" />
-  <player associatedScriptName="Karl1" posY="3" posX="4" direction="2" />
-  <player associatedScriptName="Karl2" posY="4" posX="3" direction="1" />
-  <score twoStars="3875" threeStars="4875"/>
+  <console state="0" posY="6" posX="0" direction="2" >
+    <slot slotId="2" />
+  </console>
+  <door posY="1" posX="1" slotId ="0" direction="2" />
+  <door posY="1" posX="5" slotId ="0" direction="3" />
+  <door posY="3" posX="1" slotId ="1" direction="2" />
+  <door posY="3" posX="5" slotId ="0" direction="3" />
+  <door posY="5" posX="1" slotId ="2" direction="2" />
+  <door posY="5" posX="5" slotId ="0" direction="3" />
+  <player associatedScriptName="Alessia" posY="1" posX="3" direction="1" />
+<score twoStars="3000" threeStars="4500" />
 </level>

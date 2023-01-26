@@ -67,6 +67,8 @@ public class EditorSystem : FSystem {
 	private GameObject[] grid;
 
     private int orientation;
+    private int twoStars = 3000;
+    private int threeStars = 4500;
 
 	private string editMode;
     private string previousMode;
@@ -744,7 +746,7 @@ public class EditorSystem : FSystem {
         string blockLimits = "";
         string players = "";
         string scripts = "";
-        string score = "";
+        string score = "<score twoStars=\""+twoStars.ToString()+"\" threeStars=\""+threeStars.ToString()+"\" />\n";
         string console = "";
         string treadmill = "";
         string decoration = "";

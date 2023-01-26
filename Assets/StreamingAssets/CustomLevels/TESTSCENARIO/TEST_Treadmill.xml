@@ -46,4 +46,5 @@
   <treadmill posY="5" posX="3" direction="0" />
   <treadmill posY="5" posX="4" direction="0" />
   <player associatedScriptName="Karl" posY="6" posX="0" direction="0" />
+  <score twoStars="3875" threeStars="4875"/>
 </level>
