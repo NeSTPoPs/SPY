@@ -1,15 +1,18 @@
 <?xml version="1.0"?>
 <level>
   <map>
-    <line><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /></line>
-    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "2" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
-    <line><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /></line>
-    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
-    <line><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /></line>
-    <line><cell value= "3" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
-    <line><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "3" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "2" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "1" /></line>
   </map>
   <dialogs>
+<dialog text ="Alessia est en retard pour son cours d'ISG !" />
+<dialog text ="La salle se trouve juste au fond à gauche !" />
+<dialog text ="Aide Alessia à trouver son chemin !" />
   </dialogs>
   <blockLimits>
     <blockLimit blockType="Forward" limit="-1" />
@@ -32,15 +35,14 @@
     <blockLimit blockType="FieldGate" limit="-1" />
     <blockLimit blockType="Exit" limit="-1" />
   </blockLimits>
-  <console state="0" posY="6" posX="0" direction="2" >
-    <slot slotId="2" />
-  </console>
-  <door posY="1" posX="1" slotId ="0" direction="2" />
-  <door posY="1" posX="5" slotId ="0" direction="3" />
-  <door posY="3" posX="1" slotId ="1" direction="2" />
-  <door posY="3" posX="5" slotId ="0" direction="3" />
-  <door posY="5" posX="1" slotId ="2" direction="2" />
-  <door posY="5" posX="5" slotId ="0" direction="3" />
-  <player associatedScriptName="Alessia" posY="1" posX="3" direction="1" />
+  <decoration name="Modern Furniture/Prefabs/Desk" posY ="0" posX="1" direction="3" />
+  <decoration name="Modern Furniture/Prefabs/Desk" posY ="2" posX="0" direction="1" />
+  <decoration name="Modern Furniture/Prefabs/Desk" posY ="2" posX="2" direction="1" />
+  <decoration name="Modern Furniture/Prefabs/Desk" posY ="3" posX="0" direction="1" />
+  <decoration name="Modern Furniture/Prefabs/Desk" posY ="3" posX="2" direction="1" />
+  <door posY="1" posX="6" slotId ="0" direction="2" />
+  <door posY="5" posX="4" slotId ="0" direction="3" />
+  <door posY="5" posX="6" slotId ="0" direction="2" />
+  <player associatedScriptName="Alessia" posY="5" posX="5" direction="0" />
 <score twoStars="3000" threeStars="4500" />
 </level>
