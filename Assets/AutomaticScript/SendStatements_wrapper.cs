@@ -24,6 +24,16 @@ public class SendStatements_wrapper : BaseWrapper
 		MainLoop.callAppropriateSystemMethod (system, "sendStatement", null);
 	}
 
+	public void sendStatementserie()
+	{
+		MainLoop.callAppropriateSystemMethod (system, "sendStatementserie", null);
+	}
+
+	public void initFiles()
+	{
+		MainLoop.callAppropriateSystemMethod (system, "initFiles", null);
+	}
+
 	public void start_Timer()
 	{
 		MainLoop.callAppropriateSystemMethod (system, "start_Timer", null);
@@ -37,6 +47,21 @@ public class SendStatements_wrapper : BaseWrapper
 	public void pushedPause()
 	{
 		MainLoop.callAppropriateSystemMethod (system, "pushedPause", null);
+	}
+
+	public void pushedPlay()
+	{
+		MainLoop.callAppropriateSystemMethod (system, "pushedPlay", null);
+	}
+
+	public void pushedRestart()
+	{
+		MainLoop.callAppropriateSystemMethod (system, "pushedRestart", null);
+	}
+
+	public void nextLevel()
+	{
+		MainLoop.callAppropriateSystemMethod (system, "nextLevel", null);
 	}
 
 }

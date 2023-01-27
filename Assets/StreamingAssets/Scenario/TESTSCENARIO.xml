@@ -4,4 +4,5 @@
   <level name="CustomLevels/TESTSCENARIO/TEST_Treadmill.xml" />
   <level name="CustomLevels/TESTSCENARIO/TEST_Orientation.xml" />
   <level name="CustomLevels/TESTSCENARIO/TEST_Dialogs.xml" />
+  <level name="CustomLevels/TESTSCENARIO/Le bodel.xml" />
 </scenario>

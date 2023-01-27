@@ -42,13 +42,49 @@
                 "en-US": "meilleurscore"
             }
         },
-        "nbstars": {
+        "nb_chain": {
+            "description": {
+                "en-US": "number of levels played in a row"
+            },
+            "id": "https://www.lip6.fr/mocah/???/nb_chain",
+            "name": {
+                "en-US": "nb_chain"
+            }
+        },
+        "nb_pause": {
+            "description": {
+                "en-US": "number of times the player made paused"
+            },
+            "id": "https://www.lip6.fr/mocah/???/nb_pause",
+            "name": {
+                "en-US": "nb_pause"
+            }
+        },
+        "nb_play": {
+            "description": {
+                "en-US": "number of times the player pressed play"
+            },
+            "id": "https://www.lip6.fr/mocah/???/nb_play",
+            "name": {
+                "en-US": "nb_play"
+            }
+        },
+        "nb_reset": {
+            "description": {
+                "en-US": "number of times the player resets the game"
+            },
+            "id": "https://www.lip6.fr/mocah/???/nb_reset",
+            "name": {
+                "en-US": "nb_reset"
+            }
+        },
+        "nb_stars": {
             "description": {
                 "en-US": "number of stars the player got on this level"
             },
             "id": "https://www.lip6.fr/mocah/???/nb_stars",
             "name": {
-                "en-US": "nbstars"
+                "en-US": "nb_stars"
             }
         },
         "score": {
@@ -60,13 +96,13 @@
                 "en-US": "score"
             }
         },
-        "temps": {
+        "temps_editmode": {
             "description": {
                 "en-US": "play time (dialog and execution excluded)"
             },
             "id": "https://www.lip6.fr/mocah/???/temps",
             "name": {
-                "en-US": "temps"
+                "en-US": "temps_editmode"
             }
         }
     },

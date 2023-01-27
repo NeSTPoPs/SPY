@@ -207,6 +207,7 @@ public class EndGameManager : FSystem {
 			SendStatements_wrapper ssw = mloop.GetComponent<SendStatements_wrapper>();
 			ssw.pause_Timer();
 			ssw.sendStatement();
+			ssw.nextLevel();
 		}
 	}
 
@@ -280,7 +281,7 @@ public class EndGameManager : FSystem {
 			activityExtensions = new Dictionary<string, string>() {
 				{ "score" , score.ToString() },
 				{ "meilleurscore" , scorMaxNiv.ToString() },
-				{ "nbstars" , nb_stars.ToString() }
+				{ "nb_stars" , nb_stars.ToString() }
 			}
 		});
 	}

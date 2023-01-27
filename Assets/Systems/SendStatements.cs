@@ -3,6 +3,7 @@ using FYFY;
 using DIG.GBLXAPI;
 using System;
 using System.IO;
+using System.Text;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
@@ -13,12 +14,14 @@ public class SendStatements : FSystem {
     public static SendStatements instance;
 
     private int nb_paused;
+    private int nb_play;
     private float timer;
     private float mini_timer;
 
     public int score;
     public int scoreMaxNiveau;
     public int nb_stars;
+
 
     public SendStatements()
     {
@@ -27,7 +30,6 @@ public class SendStatements : FSystem {
 	
 	protected override void onStart()
     {
-
 		initGBLXAPI();
         nb_paused = 0;
         timer = 0;
@@ -111,6 +113,7 @@ public class SendStatements : FSystem {
         string levelName = (titre[titre.Length - 1]).Split('.')[0];
         Debug.Log(GBL_Interface.playerName + " Send Statement sent");
         Debug.Log("Time : " + timer.ToString());
+        string nb_reset = File.ReadAllText("Assets/StreamingAssets/TracesFile/ResetCounter.txt");
         GameObjectManager.addComponent<ActionPerformedForLRS>(MainLoop.instance.gameObject, new
         {
             verb = "interacted",
@@ -119,14 +122,38 @@ public class SendStatements : FSystem {
             activityExtensions = new Dictionary<string, string>() {
                 { "campagne" , campagne },
                 { "level" , levelName },
-                { "temps" , timer.ToString() },
-                { "score" , score.ToString() },
+                { "temps_editmode" , timer.ToString() },
+                /*{ "score" , score.ToString() },
                 { "meilleurscore" , scoreMaxNiveau.ToString() },
-                { "nbstars" , nb_stars.ToString() },
-              { "action", nb_paused.ToString() }
+                { "nb_stars" , nb_stars.ToString() },*/
+                { "nb_pause", nb_paused.ToString() },
+                { "nb_play", nb_play.ToString() },
+                { "nb_reset", nb_reset }
             }
         });
-     }
+        System.IO.File.WriteAllText("Assets/StreamingAssets/TracesFile/ResetCounter.txt", "0");
+    }
+
+    public void sendStatementserie()
+    {
+        string nb_chain = File.ReadAllText("Assets/StreamingAssets/TracesFile/serieCounter.txt");
+        GameObjectManager.addComponent<ActionPerformedForLRS>(MainLoop.instance.gameObject, new
+        {
+            verb = "interacted",
+            objectType = "value",
+            activityExtensions = new Dictionary<string, string>() {
+                { "nb_chain", nb_chain }
+            }
+        });
+    }
+
+
+    public void initFiles()
+    {
+        System.IO.File.WriteAllText("Assets/StreamingAssets/TracesFile/ResetCounter.txt", "0");
+        System.IO.File.WriteAllText("Assets/StreamingAssets/TracesFile/serieCounter.txt", "0");
+    }
+
 
     public void start_Timer()
     {
@@ -145,6 +172,28 @@ public class SendStatements : FSystem {
     {
         nb_paused += 1;
     }
+
+    public void pushedPlay()
+    {
+        nb_play += 1;
+    }
+
+    public void pushedRestart()
+    {
+        string compteur = File.ReadAllText("Assets/StreamingAssets/TracesFile/ResetCounter.txt");
+        int cmpt = int.Parse(compteur);
+        cmpt++;
+        System.IO.File.WriteAllText("Assets/StreamingAssets/TracesFile/ResetCounter.txt", cmpt.ToString());
+    }
+
+    public void nextLevel()
+    {
+        string compteur = File.ReadAllText("Assets/StreamingAssets/TracesFile/serieCounter.txt");
+        int cmpt = int.Parse(compteur);
+        cmpt++;
+        System.IO.File.WriteAllText("Assets/StreamingAssets/TracesFile/serieCounter.txt", cmpt.ToString());
+    }
+
 
     public void registerScore(int score, int scoreMaxNiveau, int nb_stars)
     {
