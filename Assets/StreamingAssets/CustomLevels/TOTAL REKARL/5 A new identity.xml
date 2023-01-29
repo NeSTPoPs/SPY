@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<level>
+  <map>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "3" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "2" /><cell value= "0" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "2" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "3" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /></line>
+  </map>
+  <dialogs>
+<dialog text ="Quaid : C’est donc le bureau de Richter. Je vais jeter un coup d’œil aux documents dans le bureau.
+Quentin : Déjà fait ! Mais je ne comprends pas : d’après ce que je lis, tu n’es pas Quaid, tu es l’agent secret Karl. Et la partie géniale est que ces papiers sont signés... par Karl ! Cette histoire est folle !" />
+<dialog text ="Quaid : Je veux lire ça avec mes yeux !
+Quentin : Tu trouveras les documents sur le bureau. Attention, si tu montes sur le tapis roulant tu seras surement découvert !" />
+  </dialogs>
+  <blockLimits>
+    <blockLimit blockType="Forward" limit="12" />
+    <blockLimit blockType="TurnLeft" limit="3" />
+    <blockLimit blockType="TurnRight" limit="3" />
+    <blockLimit blockType="TurnBack" limit="-1" />
+    <blockLimit blockType="Activate" limit="-1" />
+    <blockLimit blockType="Wait" limit="-1" />
+    <blockLimit blockType="IfThen" limit="0" />
+    <blockLimit blockType="IfElse" limit="0" />
+    <blockLimit blockType="While" limit="0" />
+    <blockLimit blockType="ForLoop" limit="0" />
+    <blockLimit blockType="AndOperator" limit="0" />
+    <blockLimit blockType="OrOperator" limit="0" />
+    <blockLimit blockType="NotOperator" limit="0" />
+    <blockLimit blockType="WallFront" limit="0" />
+    <blockLimit blockType="Enemy" limit="0" />
+    <blockLimit blockType="Terminal" limit="0" />
+    <blockLimit blockType="RedArea" limit="0" />
+    <blockLimit blockType="FieldGate" limit="0" />
+    <blockLimit blockType="Exit" limit="0" />
+  </blockLimits>
+  <decoration name="Modern Furniture/Prefabs/Book Rack" posY ="4" posX="2" direction="3" />
+  <decoration name="Modern Furniture/Prefabs/Book Rack" posY ="4" posX="8" direction="2" />
+  <decoration name="Modern Furniture/Prefabs/Book Rack" posY ="5" posX="2" direction="3" />
+  <decoration name="Modern Furniture/Prefabs/Book Rack" posY ="5" posX="8" direction="2" />
+  <decoration name="Modern Furniture/Prefabs/Desk" posY ="6" posX="5" direction="3" />
+  <decoration name="Modern Furniture/Prefabs/Book Rack" posY ="7" posX="2" direction="3" />
+  <decoration name="Modern Furniture/Prefabs/Book Rack" posY ="7" posX="8" direction="2" />
+  <decoration name="Modern Furniture/Prefabs/Book Rack" posY ="8" posX="2" direction="3" />
+  <decoration name="Modern Furniture/Prefabs/Book Rack" posY ="8" posX="8" direction="2" />
+  <door posY="0" posX="5" slotId ="0" direction="0" />
+  <treadmill posY="4" posX="4" direction="1" />
+  <treadmill posY="4" posX="5" direction="3" />
+  <treadmill posY="4" posX="6" direction="3" />
+  <treadmill posY="5" posX="4" direction="2" />
+  <treadmill posY="5" posX="5" direction="2" />
+  <treadmill posY="5" posX="6" direction="0" />
+  <player associatedScriptName="Quentin" posY="2" posX="7" direction="3" />
+  <player associatedScriptName="Quaid" posY="3" posX="5" direction="1" />
+    <enemy associatedScriptName="Guarde" posY="7" posX="5" direction="3" range="1" selfRange="False" typeRange="0" />
+    <script name="Guarde">
+	    <forever>
+		    <action type="Forward"/>
+		    <action type="TurnRight"/>
+			<action type="Forward"/>
+	    </forever>
+    </script>
+<score twoStars="3000" threeStars="4500" />
+</level>

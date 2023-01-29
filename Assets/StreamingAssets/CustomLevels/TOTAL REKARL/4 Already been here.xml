@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<level>
+  <map>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "2" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "3" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "2" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "3" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+  </map>
+  <dialogs>
+<dialog text ="Quaid : C'est étrange, j'ai l'impression d'être déjà venu dans cet endroit auparavant. Je veux aller voir ce qu'il y a dans cette pièce." />
+<dialog text ="Quentin : C'est le bureau de Richter, l'homme le plus puissant de Mars. Je ne pense pas qu'aller dans son bureau soit une bonne idée." />
+  </dialogs>
+  <blockLimits>
+    <blockLimit blockType="Forward" limit="-1" />
+    <blockLimit blockType="TurnLeft" limit="2" />
+    <blockLimit blockType="TurnRight" limit="2" />
+    <blockLimit blockType="TurnBack" limit="1" />
+    <blockLimit blockType="Activate" limit="1" />
+    <blockLimit blockType="Wait" limit="0" />
+    <blockLimit blockType="IfThen" limit="0" />
+    <blockLimit blockType="IfElse" limit="0" />
+    <blockLimit blockType="While" limit="0" />
+    <blockLimit blockType="ForLoop" limit="0" />
+    <blockLimit blockType="AndOperator" limit="0" />
+    <blockLimit blockType="OrOperator" limit="0" />
+    <blockLimit blockType="NotOperator" limit="0" />
+    <blockLimit blockType="WallFront" limit="0" />
+    <blockLimit blockType="Enemy" limit="0" />
+    <blockLimit blockType="Terminal" limit="0" />
+    <blockLimit blockType="RedArea" limit="0" />
+    <blockLimit blockType="FieldGate" limit="0" />
+    <blockLimit blockType="Exit" limit="0" />
+  </blockLimits>
+  <decoration name="Modern Furniture/Prefabs/Desk" posY ="4" posX="7" direction="0" />
+  <decoration name="Modern Furniture/Prefabs/Book Rack" posY ="3" posX="6" direction="1" />
+  <decoration name="Modern Furniture/Prefabs/Book Rack" posY ="3" posX="7" direction="1" />
+  <console state="1" posY="4" posX="1" direction="3" >
+    <slot slotId="1" />
+  </console>
+  <door posY="0" posX="0" slotId ="0" direction="0" />
+  <door posY="0" posX="1" slotId ="0" direction="0" />
+  <door posY="0" posX="2" slotId ="0" direction="0" />
+  <door posY="0" posX="3" slotId ="0" direction="0" />
+  <door posY="0" posX="4" slotId ="0" direction="0" />
+  <door posY="0" posX="5" slotId ="0" direction="0" />
+  <door posY="0" posX="6" slotId ="0" direction="0" />
+  <door posY="0" posX="7" slotId ="0" direction="0" />
+  <door posY="0" posX="8" slotId ="0" direction="0" />
+  <door posY="4" posX="4" slotId ="1" direction="2" />
+  <door posY="8" posX="0" slotId ="0" direction="1" />
+  <door posY="8" posX="1" slotId ="0" direction="1" />
+  <door posY="8" posX="2" slotId ="0" direction="1" />
+  <door posY="8" posX="3" slotId ="0" direction="1" />
+  <door posY="8" posX="4" slotId ="0" direction="1" />
+  <door posY="8" posX="5" slotId ="0" direction="1" />
+  <door posY="8" posX="6" slotId ="0" direction="1" />
+  <door posY="8" posX="7" slotId ="0" direction="1" />
+  <door posY="8" posX="8" slotId ="0" direction="1" />
+  <player associatedScriptName="Quentin" posY="2" posX="3" direction="1" />
+  <player associatedScriptName="Quaid" posY="4" posX="2" direction="3" />
+<score twoStars="3000" threeStars="4500" />
+</level>

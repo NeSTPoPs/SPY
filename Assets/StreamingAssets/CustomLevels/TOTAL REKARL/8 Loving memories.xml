@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<level>
+  <map>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "3" /><cell value= "3" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "2" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+  </map>
+  <dialogs>
+<dialog text ="Alessia : Tu vivais ici avec moi, on se battait contre Richter pour que les mutants aient l’air frais. Un jour, tu nous as abandonnés à notre destin et tu n’es jamais revenu. Tu n’es plus le bienvenu ici !" />
+<dialog text ="Karl : Je ne sais pas ce que j'ai fait dans le passé, mais aujourd'hui je suis là pour vous aider. Emmene-moi dans le refuge des mutants." />
+  </dialogs>
+  <blockLimits>
+    <blockLimit blockType="Forward" limit="3" />
+    <blockLimit blockType="TurnLeft" limit="0" />
+    <blockLimit blockType="TurnRight" limit="0" />
+    <blockLimit blockType="TurnBack" limit="0" />
+    <blockLimit blockType="Activate" limit="1" />
+    <blockLimit blockType="Wait" limit="0" />
+    <blockLimit blockType="IfThen" limit="0" />
+    <blockLimit blockType="IfElse" limit="0" />
+    <blockLimit blockType="While" limit="1" />
+    <blockLimit blockType="ForLoop" limit="0" />
+    <blockLimit blockType="AndOperator" limit="0" />
+    <blockLimit blockType="OrOperator" limit="0" />
+    <blockLimit blockType="NotOperator" limit="1" />
+    <blockLimit blockType="WallFront" limit="0" />
+    <blockLimit blockType="Enemy" limit="0" />
+    <blockLimit blockType="Terminal" limit="1" />
+    <blockLimit blockType="RedArea" limit="0" />
+    <blockLimit blockType="FieldGate" limit="0" />
+    <blockLimit blockType="Exit" limit="0" />
+  </blockLimits>
+  <console state="1" posY="5" posX="3" direction="1" >
+    <slot slotId="1" />
+  </console>
+  <door posY="4" posX="0" slotId ="0" direction="1" />
+  <door posY="4" posX="1" slotId ="0" direction="1" />
+  <door posY="4" posX="2" slotId ="0" direction="1" />
+  <door posY="4" posX="3" slotId ="0" direction="1" />
+  <door posY="4" posX="4" slotId ="0" direction="1" />
+  <door posY="4" posX="5" slotId ="0" direction="1" />
+  <door posY="4" posX="6" slotId ="0" direction="1" />
+  <door posY="4" posX="7" slotId ="0" direction="1" />
+  <door posY="4" posX="8" slotId ="0" direction="1" />
+  <door posY="4" posX="9" slotId ="0" direction="1" />
+  <door posY="4" posX="10" slotId ="0" direction="1" />
+  <door posY="5" posX="2" slotId ="1" direction="3" />
+  <door posY="6" posX="0" slotId ="0" direction="0" />
+  <door posY="6" posX="1" slotId ="0" direction="0" />
+  <door posY="6" posX="2" slotId ="0" direction="0" />
+  <door posY="6" posX="3" slotId ="0" direction="0" />
+  <door posY="6" posX="4" slotId ="0" direction="0" />
+  <door posY="6" posX="5" slotId ="0" direction="0" />
+  <door posY="6" posX="6" slotId ="0" direction="0" />
+  <door posY="6" posX="7" slotId ="0" direction="0" />
+  <door posY="6" posX="8" slotId ="0" direction="0" />
+  <door posY="6" posX="9" slotId ="0" direction="0" />
+  <door posY="6" posX="10" slotId ="0" direction="0" />
+	<door posY="10" posX="0" slotId ="0" direction="0" />
+	<door posY="10" posX="1" slotId ="0" direction="0" />
+	<door posY="10" posX="2" slotId ="0" direction="0" />
+	<door posY="10" posX="3" slotId ="0" direction="0" />
+	<door posY="10" posX="4" slotId ="0" direction="0" />
+	<door posY="10" posX="5" slotId ="0" direction="0" />
+	<door posY="10" posX="6" slotId ="0" direction="0" />
+	<door posY="10" posX="7" slotId ="0" direction="0" />
+	<door posY="10" posX="8" slotId ="0" direction="0" />
+	<door posY="10" posX="9" slotId ="0" direction="0" />
+	<door posY="10" posX="10" slotId ="0" direction="0" />
+	<door posY="0" posX="0" slotId ="0" direction="0" />
+	<door posY="0" posX="1" slotId ="0" direction="0" />
+	<door posY="0" posX="2" slotId ="0" direction="0" />
+	<door posY="0" posX="3" slotId ="0" direction="0" />
+	<door posY="0" posX="4" slotId ="0" direction="0" />
+	<door posY="0" posX="5" slotId ="0" direction="0" />
+	<door posY="0" posX="6" slotId ="0" direction="0" />
+	<door posY="0" posX="7" slotId ="0" direction="0" />
+	<door posY="0" posX="8" slotId ="0" direction="0" />
+	<door posY="0" posX="9" slotId ="0" direction="0" />
+	<door posY="0" posX="10" slotId ="0" direction="0" />
+	<door posY="1" posX="0" slotId ="0" direction="3" />
+	<door posY="2" posX="0" slotId ="0" direction="3" />
+	<door posY="3" posX="0" slotId ="0" direction="3" />
+	<door posY="7" posX="0" slotId ="0" direction="3" />
+	<door posY="8" posX="0" slotId ="0" direction="3" />
+	<door posY="9" posX="0" slotId ="0" direction="3" />
+	<door posY="1" posX="10" slotId ="0" direction="3" />
+	<door posY="2" posX="10" slotId ="0" direction="3" />
+	<door posY="3" posX="10" slotId ="0" direction="3" />
+	<door posY="7" posX="10" slotId ="0" direction="3" />
+	<door posY="8" posX="10" slotId ="0" direction="3" />
+	<door posY="9" posX="10" slotId ="0" direction="3" />
+  <player associatedScriptName="Alessia" posY="5" posX="0" direction="2" />
+  <player associatedScriptName="Karl" posY="5" posX="10" direction="3" />
+<score twoStars="3000" threeStars="4500" />
+</level>

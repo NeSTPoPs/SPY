@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<level>
+  <map>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "3" /><cell value= "0" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "2" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "2" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "0" /><cell value= "3" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+  </map>
+  <dialogs>
+<dialog text ="Quentin : Ici, sur Mars, il n'y a pas d'atmosphère : les cabines sont pressurisées pour fournir un air respirable. C'est pourquoi il y a toutes ces portes et il faut parfois en activer certaines pour pouvoir passer." />
+<dialog text ="Quaid : Je vois un terminal à proximité, si je trouve un moyen de l'activer, il ouvrira peut-être la porte." />
+  </dialogs>
+  <blockLimits>
+    <blockLimit blockType="Forward" limit="-1" />
+    <blockLimit blockType="TurnLeft" limit="-1" />
+    <blockLimit blockType="TurnRight" limit="-1" />
+    <blockLimit blockType="TurnBack" limit="0" />
+    <blockLimit blockType="Activate" limit="2" />
+    <blockLimit blockType="Wait" limit="0" />
+    <blockLimit blockType="IfThen" limit="0" />
+    <blockLimit blockType="IfElse" limit="0" />
+    <blockLimit blockType="While" limit="0" />
+    <blockLimit blockType="ForLoop" limit="0" />
+    <blockLimit blockType="AndOperator" limit="0" />
+    <blockLimit blockType="OrOperator" limit="0" />
+    <blockLimit blockType="NotOperator" limit="0" />
+    <blockLimit blockType="WallFront" limit="0" />
+    <blockLimit blockType="Enemy" limit="0" />
+    <blockLimit blockType="Terminal" limit="0" />
+    <blockLimit blockType="RedArea" limit="0" />
+    <blockLimit blockType="FieldGate" limit="0" />
+    <blockLimit blockType="Exit" limit="0" />
+  </blockLimits>
+  <console state="1" posY="2" posX="2" direction="0" >
+    <slot slotId="1" />
+  </console>
+  <console state="1" posY="4" posX="4" direction="1" >
+    <slot slotId="2" />
+  </console>
+  <door posY="0" posX="0" slotId ="0" direction="0" />
+  <door posY="0" posX="1" slotId ="0" direction="0" />
+  <door posY="0" posX="2" slotId ="0" direction="0" />
+  <door posY="0" posX="3" slotId ="0" direction="0" />
+  <door posY="0" posX="4" slotId ="0" direction="0" />
+  <door posY="0" posX="6" slotId ="0" direction="0" />
+  <door posY="1" posX="5" slotId ="1" direction="0" />
+  <door posY="5" posX="1" slotId ="2" direction="1" />
+  <door posY="6" posX="0" slotId ="0" direction="1" />
+  <door posY="6" posX="2" slotId ="0" direction="1" />
+  <door posY="6" posX="3" slotId ="0" direction="1" />
+  <door posY="6" posX="4" slotId ="0" direction="1" />
+  <door posY="6" posX="5" slotId ="0" direction="1" />
+  <door posY="6" posX="6" slotId ="0" direction="1" />
+  <player associatedScriptName="Quentin" posY="2" posX="0" direction="2" />
+  <script name="Quentin" editMode="2" type="2">
+	  <action type="Forward"/>
+	  <action type="Forward"/>
+	  <action type="Activate"/>
+  </script>
+  <player associatedScriptName="Quaid" posY="4" posX="6" direction="3" />
+<score twoStars="3000" threeStars="4500" />
+</level>

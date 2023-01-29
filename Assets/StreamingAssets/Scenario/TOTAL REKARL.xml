@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<scenario>
+  <level name="CustomLevels/TOTAL REKARL/1 Boarding to Mars.xml" />
+  <level name="CustomLevels/TOTAL REKARL/2 Cabin pressurization.xml" />
+  <level name="CustomLevels/TOTAL REKARL/3 Getting noticed.xml" />
+  <level name="CustomLevels/TOTAL REKARL/4 Already been here.xml" />
+  <level name="CustomLevels/TOTAL REKARL/5 A new identity.xml" />
+  <level name="CustomLevels/TOTAL REKARL/6 Follow the tracks.xml" />
+  <level name="CustomLevels/TOTAL REKARL/7 Meet Alessia.xml" />
+  <level name="CustomLevels/TOTAL REKARL/8 Loving memories.xml" />	
+  <level name="CustomLevels/TOTAL REKARL/9 The rebel quarter.xml" />
+  <level name="CustomLevels/TOTAL REKARL/10 One of us.xml" />
+  <level name="CustomLevels/TOTAL REKARL/11 Solve the mistery.xml" />
+  <level name="CustomLevels/TOTAL REKARL/12 Quentin must be saved.xml" />
+  <level name="CustomLevels/TOTAL REKARL/13 Trust and betrayal.xml" />
+  <level name="CustomLevels/TOTAL REKARL/14 Sunset of the rebellion" />
+  <level name="CustomLevels/TOTAL REKARL/15 Not again" />
+  <level name="CustomLevels/TOTAL REKARL/16 The last mission" />
+  <level name="CustomLevels/TOTAL REKARL/17 The martian engine" />
+  <level name="CustomLevels/TOTAL REKARL/18 Activate" />
+  <level name="CustomLevels/TOTAL REKARL/19 Breathe" />
+  <level name="CustomLevels/TOTAL REKARL/20 Was it a dream?" />
+</scenario>

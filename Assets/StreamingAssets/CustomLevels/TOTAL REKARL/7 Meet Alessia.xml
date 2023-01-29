@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<level>
+  <map>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "3" /><cell value= "3" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "2" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+  </map>
+  <dialogs>
+<dialog text ="Alessia : Karl ! Comment oses-tu te montrer ici après toutes ces années ? Nous n'avons plus besoin de toi, pars !" />
+<dialog text ="Quentin : Cette fille n'a pas l'air très heureuse de te voir, je ferais mieux de t'attendre dehors.
+Karl : Tu connais mon nom ? Tu peux me dire qui je suis ? J'ai perdu la mémoire !
+" />
+  </dialogs>
+  <blockLimits>
+    <blockLimit blockType="Forward" limit="-1" />
+    <blockLimit blockType="TurnLeft" limit="-1" />
+    <blockLimit blockType="TurnRight" limit="-1" />
+    <blockLimit blockType="TurnBack" limit="-1" />
+    <blockLimit blockType="Activate" limit="-1" />
+    <blockLimit blockType="Wait" limit="-1" />
+    <blockLimit blockType="IfThen" limit="0" />
+    <blockLimit blockType="IfElse" limit="0" />
+    <blockLimit blockType="While" limit="0" />
+    <blockLimit blockType="ForLoop" limit="0" />
+    <blockLimit blockType="AndOperator" limit="0" />
+    <blockLimit blockType="OrOperator" limit="0" />
+    <blockLimit blockType="NotOperator" limit="0" />
+    <blockLimit blockType="WallFront" limit="0" />
+    <blockLimit blockType="Enemy" limit="0" />
+    <blockLimit blockType="Terminal" limit="0" />
+    <blockLimit blockType="RedArea" limit="0" />
+    <blockLimit blockType="FieldGate" limit="0" />
+    <blockLimit blockType="Exit" limit="0" />
+  </blockLimits>
+  <door posY="0" posX="0" slotId ="0" direction="0" />
+  <door posY="0" posX="1" slotId ="0" direction="0" />
+  <door posY="0" posX="2" slotId ="0" direction="0" />
+  <door posY="0" posX="3" slotId ="0" direction="0" />
+  <door posY="0" posX="4" slotId ="0" direction="0" />
+  <door posY="0" posX="5" slotId ="0" direction="0" />
+  <door posY="0" posX="6" slotId ="0" direction="0" />
+  <door posY="0" posX="7" slotId ="0" direction="0" />
+  <door posY="1" posX="0" slotId ="0" direction="3" />
+  <door posY="1" posX="7" slotId ="0" direction="2" />
+  <door posY="2" posX="0" slotId ="0" direction="3" />
+  <door posY="2" posX="7" slotId ="0" direction="2" />
+  <door posY="3" posX="0" slotId ="0" direction="3" />
+  <door posY="3" posX="7" slotId ="0" direction="2" />
+  <door posY="4" posX="0" slotId ="0" direction="3" />
+  <door posY="4" posX="7" slotId ="0" direction="2" />
+  <door posY="5" posX="0" slotId ="0" direction="3" />
+  <door posY="5" posX="7" slotId ="0" direction="2" />
+  <door posY="6" posX="0" slotId ="0" direction="3" />
+  <door posY="6" posX="7" slotId ="0" direction="2" />
+  <door posY="7" posX="0" slotId ="0" direction="1" />
+  <door posY="7" posX="1" slotId ="0" direction="1" />
+  <door posY="7" posX="2" slotId ="0" direction="1" />
+  <door posY="7" posX="3" slotId ="0" direction="1" />
+  <door posY="7" posX="4" slotId ="0" direction="1" />
+  <door posY="7" posX="5" slotId ="0" direction="1" />
+  <door posY="7" posX="6" slotId ="0" direction="1" />
+  <door posY="7" posX="7" slotId ="0" direction="1" />
+  <treadmill posY="1" posX="2" direction="2" />
+  <treadmill posY="1" posX="3" direction="1" />
+  <treadmill posY="1" posX="4" direction="1" />
+  <treadmill posY="2" posX="3" direction="1" />
+  <treadmill posY="2" posX="4" direction="1" />
+  <treadmill posY="2" posX="6" direction="0" />
+  <treadmill posY="3" posX="1" direction="0" />
+  <treadmill posY="3" posX="2" direction="1" />
+  <treadmill posY="3" posX="3" direction="3" />
+  <treadmill posY="3" posX="4" direction="1" />
+  <treadmill posY="3" posX="5" direction="2" />
+  <treadmill posY="3" posX="6" direction="0" />
+  <treadmill posY="4" posX="1" direction="0" />
+  <treadmill posY="4" posX="2" direction="1" />
+  <treadmill posY="4" posX="5" direction="0" />
+  <treadmill posY="5" posX="1" direction="0" />
+  <treadmill posY="5" posX="2" direction="2" />
+  <treadmill posY="5" posX="3" direction="1" />
+  <treadmill posY="5" posX="4" direction="3" />
+  <treadmill posY="5" posX="5" direction="3" />
+  <treadmill posY="6" posX="3" direction="2" />
+  <treadmill posY="6" posX="4" direction="2" />
+  <treadmill posY="6" posX="5" direction="2" />
+  <treadmill posY="6" posX="6" direction="0" />
+  <player associatedScriptName="Alessia" posY="4" posX="3" direction="2" />
+  <player associatedScriptName="Karl" posY="6" posX="1" direction="0" />
+<score twoStars="3000" threeStars="4500" />
+</level>

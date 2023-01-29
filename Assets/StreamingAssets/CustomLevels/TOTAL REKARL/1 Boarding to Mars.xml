@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<level>
+  <map>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "3" /><cell value= "0" /><cell value= "3" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "2" /><cell value= "1" /><cell value= "2" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /></line>
+  </map>
+  <dialogs>
+<dialog text ="Quaid a des souvenirs confus de son passé. Ses cauchemars sur Mars sont de plus en plus fréquents. Aujourd'hui, Quaid a décidé de se rendre sur Mars pour découvrir la vérité et y voir plus clair." />
+<dialog text ="Son ami Quentin a déjà vécu sur Mars et s'offre de l'accompagner pour lui apprendre quelques trucs." />
+<dialog text ="Programme les deux robots pour qu'ils arrivent à la porte d'embarquement avec aussi peu d'instructions que possible. Quentin sait que grâce au tapis roulant, il devra faire moins de pas que Quaid !" />
+  </dialogs>
+  <blockLimits>
+    <blockLimit blockType="Forward" limit="-1" />
+    <blockLimit blockType="TurnLeft" limit="-1" />
+    <blockLimit blockType="TurnRight" limit="-1" />
+    <blockLimit blockType="TurnBack" limit="0" />
+    <blockLimit blockType="Activate" limit="0" />
+    <blockLimit blockType="Wait" limit="0" />
+    <blockLimit blockType="IfThen" limit="0" />
+    <blockLimit blockType="IfElse" limit="0" />
+    <blockLimit blockType="While" limit="0" />
+    <blockLimit blockType="ForLoop" limit="0" />
+    <blockLimit blockType="AndOperator" limit="0" />
+    <blockLimit blockType="OrOperator" limit="0" />
+    <blockLimit blockType="NotOperator" limit="0" />
+    <blockLimit blockType="WallFront" limit="0" />
+    <blockLimit blockType="Enemy" limit="0" />
+    <blockLimit blockType="Terminal" limit="0" />
+    <blockLimit blockType="RedArea" limit="0" />
+    <blockLimit blockType="FieldGate" limit="0" />
+    <blockLimit blockType="Exit" limit="0" />
+  </blockLimits>
+  <door posY="1" posX="1" slotId ="0" direction="0" />
+  <door posY="1" posX="3" slotId ="0" direction="0" />
+  <door posY="1" posX="5" slotId ="0" direction="0" />
+  <treadmill posY="3" posX="4" direction="0" />
+  <treadmill posY="4" posX="4" direction="0" />
+  <player associatedScriptName="Quaid" posY="5" posX="2" direction="0" />
+  <script name="Quaid" editMode="2" type="2">
+  </script>
+  <player associatedScriptName="Quentin" posY="5" posX="4" direction="0" />
+  <script name="Quentin" editMode="2" type="2">
+  </script>
+  <score twoStars="3000" threeStars="4500" />
+</level>
