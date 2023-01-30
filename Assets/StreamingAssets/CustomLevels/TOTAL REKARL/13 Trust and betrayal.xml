@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<level>
+  <map>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "2" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "3" /><cell value= "3" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /></line>
+  </map>
+  <dialogs>
+<dialog text ="Quentin : Karl, je suis là ! Heureusement tu m’as trouvé !
+Karl : Quentin, comment vas-tu ! Je suis venu te sauver !
+?
+" />
+<dialog text ="Quentin : Je sais, ainsi Richter arrête les mutants maintenant que tu n’es pas avec eux.
+Karl : Quoi ?
+" />
+<dialog text ="Quentin : Désolé, Karl, j’ai toujours travaillé pour Richter. Mon travail était de te surveiller et de trouver le refuge secret des mutants. Merci beaucoup cher ami !" />
+  </dialogs>
+  <blockLimits>
+    <blockLimit blockType="Forward" limit="-1" />
+    <blockLimit blockType="TurnLeft" limit="-1" />
+    <blockLimit blockType="TurnRight" limit="-1" />
+    <blockLimit blockType="TurnBack" limit="-1" />
+    <blockLimit blockType="Activate" limit="-1" />
+    <blockLimit blockType="Wait" limit="-1" />
+    <blockLimit blockType="IfThen" limit="-1" />
+    <blockLimit blockType="IfElse" limit="-1" />
+    <blockLimit blockType="While" limit="-1" />
+    <blockLimit blockType="ForLoop" limit="-1" />
+    <blockLimit blockType="AndOperator" limit="0" />
+    <blockLimit blockType="OrOperator" limit="0" />
+    <blockLimit blockType="NotOperator" limit="-1" />
+    <blockLimit blockType="WallFront" limit="-1" />
+    <blockLimit blockType="Enemy" limit="0" />
+    <blockLimit blockType="Terminal" limit="-1" />
+    <blockLimit blockType="RedArea" limit="0" />
+    <blockLimit blockType="FieldGate" limit="0" />
+    <blockLimit blockType="Exit" limit="-1" />
+  </blockLimits>
+  <decoration name="Modern Furniture/Prefabs/Book Rack" posY ="1" posX="7" direction="2" />
+  <decoration name="Modern Furniture/Prefabs/Book Rack" posY ="2" posX="1" direction="3" />
+  <decoration name="Modern Furniture/Prefabs/Book Rack" posY ="2" posX="7" direction="2" />
+  <decoration name="Modern Furniture/Prefabs/Book Rack" posY ="3" posX="1" direction="3" />
+  <decoration name="Modern Furniture/Prefabs/Desk" posY ="5" posX="4" direction="3" />
+  <decoration name="Modern Furniture/Prefabs/Book Rack" posY ="5" posX="7" direction="2" />
+  <decoration name="Modern Furniture/Prefabs/Book Rack" posY ="6" posX="1" direction="3" />
+  <decoration name="Modern Furniture/Prefabs/Book Rack" posY ="6" posX="7" direction="2" />
+  <decoration name="Modern Furniture/Prefabs/Book Rack" posY ="7" posX="1" direction="3" />
+  <treadmill posY="3" posX="3" direction="2" />
+  <treadmill posY="3" posX="4" direction="2" />
+  <treadmill posY="3" posX="5" direction="1" />
+  <treadmill posY="4" posX="3" direction="0" />
+  <treadmill posY="4" posX="4" direction="3" />
+  <treadmill posY="4" posX="5" direction="3" />
+  <player associatedScriptName="Karl" posY="2" posX="4" direction="1" />
+  <player associatedScriptName="Quentin" posY="6" posX="4" direction="0" />
+	<enemy associatedScriptName="Guarde" posY="0" posX="4" direction="1" range="1" selfRange="False" typeRange="0" />
+	<script name="Guarde">
+		<forever>
+			<action type="Wait"/>
+			<action type="Wait"/>
+			<action type="Forward"/>
+			<action type="Forward"/>
+			<action type="TurnLeft"/>
+			<action type="Forward"/>
+			<action type="Forward"/>
+			<action type="TurnRight"/>
+			<action type="Forward"/>
+			<action type="Forward"/>
+			<action type="Forward"/>
+			<action type="Forward"/>
+			<action type="TurnRight"/>
+			<for nbFor="50">
+				<action type="Wait"/>
+			</for>
+		</forever>
+	</script>
+<score twoStars="3000" threeStars="4500" />
+</level>

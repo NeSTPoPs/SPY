@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<level>
+  <map>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "2" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "2" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "3" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "3" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+  </map>
+  <dialogs>
+<dialog text ="Karl : Quentin, tu es un traître !
+Quentin : Ne vous inquiétez pas Karl, nous serons bientôt amis à nouveau, dès que nous aurons effacé votre mémoire." />
+<dialog text ="Karl : Je vais te piéger et libérer les mutants !" />
+  </dialogs>
+  <blockLimits>
+    <blockLimit blockType="Forward" limit="-1" />
+    <blockLimit blockType="TurnLeft" limit="-1" />
+    <blockLimit blockType="TurnRight" limit="-1" />
+    <blockLimit blockType="TurnBack" limit="-1" />
+    <blockLimit blockType="Activate" limit="-1" />
+    <blockLimit blockType="Wait" limit="-1" />
+    <blockLimit blockType="IfThen" limit="-1" />
+    <blockLimit blockType="IfElse" limit="-1" />
+    <blockLimit blockType="While" limit="-1" />
+    <blockLimit blockType="ForLoop" limit="-1" />
+    <blockLimit blockType="AndOperator" limit="0" />
+    <blockLimit blockType="OrOperator" limit="0" />
+    <blockLimit blockType="NotOperator" limit="-1" />
+    <blockLimit blockType="WallFront" limit="-1" />
+    <blockLimit blockType="Enemy" limit="0" />
+    <blockLimit blockType="Terminal" limit="-1" />
+    <blockLimit blockType="RedArea" limit="0" />
+    <blockLimit blockType="FieldGate" limit="0" />
+    <blockLimit blockType="Exit" limit="-1" />
+  </blockLimits>
+  <console state="0" posY="8" posX="5" direction="1" >
+    <slot slotId="1" />
+  </console>
+  <door posY="0" posX="2" slotId ="0" direction="2" />
+  <door posY="0" posX="3" slotId ="0" direction="1" />
+  <door posY="0" posX="4" slotId ="0" direction="1" />
+  <door posY="0" posX="5" slotId ="0" direction="1" />
+  <door posY="0" posX="6" slotId ="0" direction="1" />
+  <door posY="0" posX="7" slotId ="0" direction="1" />
+  <door posY="0" posX="8" slotId ="0" direction="3" />
+  <door posY="1" posX="2" slotId ="0" direction="2" />
+  <door posY="1" posX="8" slotId ="0" direction="3" />
+  <door posY="2" posX="2" slotId ="0" direction="2" />
+  <door posY="2" posX="8" slotId ="0" direction="3" />
+  <door posY="3" posX="2" slotId ="0" direction="2" />
+  <door posY="3" posX="5" slotId ="1" direction="0" />
+  <door posY="3" posX="8" slotId ="0" direction="3" />
+  <door posY="4" posX="2" slotId ="0" direction="2" />
+  <door posY="4" posX="8" slotId ="0" direction="3" />
+  <door posY="5" posX="2" slotId ="0" direction="2" />
+  <door posY="5" posX="8" slotId ="0" direction="3" />
+  <door posY="6" posX="2" slotId ="0" direction="2" />
+  <door posY="6" posX="8" slotId ="0" direction="3" />
+  <door posY="7" posX="2" slotId ="0" direction="2" />
+  <door posY="7" posX="5" slotId ="1" direction="1" />
+  <door posY="7" posX="8" slotId ="0" direction="3" />
+  <door posY="8" posX="2" slotId ="0" direction="2" />
+  <door posY="8" posX="8" slotId ="0" direction="3" />
+  <door posY="9" posX="2" slotId ="0" direction="2" />
+  <door posY="9" posX="8" slotId ="0" direction="3" />
+  <door posY="10" posX="2" slotId ="0" direction="2" />
+  <door posY="10" posX="3" slotId ="0" direction="0" />
+  <door posY="10" posX="4" slotId ="0" direction="0" />
+  <door posY="10" posX="5" slotId ="0" direction="0" />
+  <door posY="10" posX="6" slotId ="0" direction="0" />
+  <door posY="10" posX="7" slotId ="0" direction="0" />
+  <door posY="10" posX="8" slotId ="0" direction="3" />
+    <player associatedScriptName="Karl" posY="5" posX="5" direction="1" />
+	<script name="Karl" editMode="2" type="2">
+	</script>
+  <player associatedScriptName="Quentin" posY="2" posX="5" direction="1" />
+	<script name="Quentin" editMode="2" type="2">
+		<for nbFor="7">
+			<action type="Forward"/>
+		</for>
+	</script>
+<score twoStars="3000" threeStars="4500" />
+</level>

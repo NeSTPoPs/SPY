@@ -1,16 +1,15 @@
 <?xml version="1.0"?>
 <level>
   <map>
-    <line><cell value= "0" /><cell value= "3" /><cell value= "3" /><cell value= "3" /><cell value= "3" /><cell value= "2" /><cell value= "0" /></line>
-    <line><cell value= "3" /><cell value= "3" /><cell value= "3" /><cell value= "2" /><cell value= "3" /><cell value= "3" /><cell value= "3" /></line>
-    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "3" /><cell value= "0" /><cell value= "0" /><cell value= "3" /></line>
-    <line><cell value= "2" /><cell value= "2" /><cell value= "2" /><cell value= "2" /><cell value= "0" /><cell value= "2" /><cell value= "0" /></line>
-    <line><cell value= "0" /><cell value= "0" /><cell value= "2" /><cell value= "3" /><cell value= "2" /><cell value= "0" /><cell value= "0" /></line>
-    <line><cell value= "0" /><cell value= "2" /><cell value= "2" /><cell value= "2" /><cell value= "2" /><cell value= "0" /><cell value= "0" /></line>
-    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "3" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
   </map>
   <dialogs>
-<dialog text ="Bonjour ce niveau est un bordel" />
   </dialogs>
   <blockLimits>
     <blockLimit blockType="Forward" limit="-1" />
@@ -33,21 +32,5 @@
     <blockLimit blockType="FieldGate" limit="-1" />
     <blockLimit blockType="Exit" limit="-1" />
   </blockLimits>
-  <console state="1" posY="2" posX="4" direction="1" >
-    <slot slotId="0" />
-  </console>
-  <player associatedScriptName="Karl" posY="0" posX="5" direction="0" />
-  <player associatedScriptName="Karl" posY="1" posX="3" direction="0" />
-  <player associatedScriptName="Karl" posY="3" posX="0" direction="2" />
-  <player associatedScriptName="Karl" posY="3" posX="1" direction="2" />
-  <player associatedScriptName="Karl" posY="3" posX="2" direction="3" />
-  <player associatedScriptName="Karl" posY="3" posX="3" direction="1" />
-  <player associatedScriptName="Karl" posY="3" posX="5" direction="2" />
-  <player associatedScriptName="Karl" posY="4" posX="2" direction="2" />
-  <player associatedScriptName="Karl" posY="4" posX="4" direction="3" />
-  <player associatedScriptName="Karl" posY="5" posX="1" direction="2" />
-  <player associatedScriptName="Karl" posY="5" posX="2" direction="2" />
-  <player associatedScriptName="Karl" posY="5" posX="3" direction="0" />
-  <player associatedScriptName="Karl" posY="5" posX="4" direction="3" />
 <score twoStars="3000" threeStars="4500" />
 </level>
