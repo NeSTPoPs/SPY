@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<level>
+  <map>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "2" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "2" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "3" /><cell value= "0" /><cell value= "3" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+    <line><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /></line>
+  </map>
+  <dialogs>
+<dialog text ="Karl : Maintenant j’activerai le réacteur et tous les habitants pourront avoir de l’oxygène gratuitement, y compris les mutants ! Ton monopole est sur le point de prendre fin !
+Richter : Voyons qui arrive le premier au réacteur !" />
+  </dialogs>
+  <blockLimits>
+    <blockLimit blockType="Forward" limit="-1" />
+    <blockLimit blockType="TurnLeft" limit="-1" />
+    <blockLimit blockType="TurnRight" limit="-1" />
+    <blockLimit blockType="TurnBack" limit="-1" />
+    <blockLimit blockType="Activate" limit="-1" />
+    <blockLimit blockType="Wait" limit="-1" />
+    <blockLimit blockType="IfThen" limit="-1" />
+    <blockLimit blockType="IfElse" limit="-1" />
+    <blockLimit blockType="While" limit="-1" />
+    <blockLimit blockType="ForLoop" limit="-1" />
+    <blockLimit blockType="AndOperator" limit="0" />
+    <blockLimit blockType="OrOperator" limit="0" />
+    <blockLimit blockType="NotOperator" limit="-1" />
+    <blockLimit blockType="WallFront" limit="-1" />
+    <blockLimit blockType="Enemy" limit="0" />
+    <blockLimit blockType="Terminal" limit="-1" />
+    <blockLimit blockType="RedArea" limit="0" />
+    <blockLimit blockType="FieldGate" limit="0" />
+    <blockLimit blockType="Exit" limit="-1" />
+  </blockLimits>
+  <door posY="4" posX="0" slotId ="0" direction="0" />
+  <door posY="4" posX="1" slotId ="0" direction="0" />
+  <door posY="4" posX="2" slotId ="0" direction="0" />
+  <door posY="4" posX="3" slotId ="0" direction="0" />
+  <door posY="4" posX="4" slotId ="0" direction="0" />
+  <door posY="4" posX="5" slotId ="0" direction="0" />
+  <door posY="4" posX="6" slotId ="0" direction="0" />
+  <door posY="4" posX="7" slotId ="0" direction="0" />
+  <door posY="4" posX="8" slotId ="0" direction="0" />
+  <door posY="4" posX="9" slotId ="0" direction="0" />
+  <door posY="4" posX="10" slotId ="0" direction="0" />
+  <door posY="4" posX="11" slotId ="0" direction="0" />
+  <door posY="4" posX="12" slotId ="0" direction="0" />
+  <door posY="6" posX="0" slotId ="0" direction="2" />
+  <door posY="7" posX="0" slotId ="0" direction="2" />
+  <door posY="7" posX="12" slotId ="0" direction="2" />
+  <door posY="8" posX="0" slotId ="0" direction="2" />
+  <door posY="8" posX="12" slotId ="0" direction="2" />
+  <door posY="9" posX="0" slotId ="0" direction="2" />
+  <door posY="9" posX="12" slotId ="0" direction="2" />
+  <door posY="10" posX="0" slotId ="0" direction="2" />
+  <door posY="10" posX="12" slotId ="0" direction="2" />
+  <door posY="11" posX="0" slotId ="0" direction="2" />
+  <door posY="11" posX="12" slotId ="0" direction="2" />
+  <door posY="12" posX="0" slotId ="0" direction="0" />
+  <door posY="12" posX="1" slotId ="0" direction="0" />
+  <door posY="12" posX="2" slotId ="0" direction="0" />
+  <door posY="12" posX="3" slotId ="0" direction="0" />
+  <door posY="12" posX="4" slotId ="0" direction="0" />
+  <door posY="12" posX="5" slotId ="0" direction="0" />
+  <door posY="12" posX="6" slotId ="0" direction="0" />
+  <door posY="12" posX="7" slotId ="0" direction="0" />
+  <door posY="12" posX="8" slotId ="0" direction="0" />
+  <door posY="12" posX="9" slotId ="0" direction="0" />
+  <door posY="12" posX="10" slotId ="0" direction="0" />
+  <door posY="12" posX="11" slotId ="0" direction="0" />
+  <door posY="12" posX="12" slotId ="0" direction="0" />
+  <treadmill posY="5" posX="3" direction="2" />
+  <treadmill posY="5" posX="4" direction="2" />
+  <treadmill posY="5" posX="5" direction="2" />
+  <treadmill posY="5" posX="6" direction="2" />
+  <treadmill posY="5" posX="7" direction="2" />
+  <treadmill posY="5" posX="8" direction="1" />
+  <treadmill posY="6" posX="3" direction="2" />
+  <treadmill posY="6" posX="4" direction="1" />
+  <treadmill posY="6" posX="6" direction="1" />
+  <treadmill posY="6" posX="7" direction="3" />
+  <treadmill posY="6" posX="8" direction="3" />
+  <treadmill posY="7" posX="4" direction="1" />
+  <treadmill posY="7" posX="6" direction="2" />
+  <treadmill posY="7" posX="7" direction="0" />
+  <treadmill posY="8" posX="4" direction="2" />
+  <player associatedScriptName="Karl" posY="5" posX="2" direction="2" />
+  <player associatedScriptName="Richter" posY="5" posX="10" direction="1" />
+  <script name="Richter" editMode="2" type="2">
+		<for nbFor="3">
+			<action type="Forward"/>
+			<action type="turnLeft"/>
+			<action type="Forward"/>
+			<action type="turnRight"/>
+		</for>
+		<action type="Forward"/>
+	</script>
+<score twoStars="3000" threeStars="4500" />
+</level>

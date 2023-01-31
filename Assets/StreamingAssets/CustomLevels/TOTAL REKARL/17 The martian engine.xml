@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<level>
+  <map>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "2" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "3" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "3" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "0" /><cell value= "2" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "1" /></line>
+    <line><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /></line>
+  </map>
+  <dialogs>
+<dialog text ="Karl : Je t’ai trouvé Richter, inutile essayer de t’enfuir !
+Richter : Je ne veux pas m’enfuir, je veux juste détruire cet endroit !" />
+<dialog text ="Karl : Quel est cet endroit ?
+Richter : C’est un réacteur construit par les martiens pour créer l’atmosphère de Mars !" />
+  </dialogs>
+  <blockLimits>
+    <blockLimit blockType="Forward" limit="-1" />
+    <blockLimit blockType="TurnLeft" limit="0" />
+    <blockLimit blockType="TurnRight" limit="0" />
+    <blockLimit blockType="TurnBack" limit="-1" />
+    <blockLimit blockType="Activate" limit="-1" />
+    <blockLimit blockType="Wait" limit="-1" />
+    <blockLimit blockType="IfThen" limit="-1" />
+    <blockLimit blockType="IfElse" limit="-1" />
+    <blockLimit blockType="While" limit="-1" />
+    <blockLimit blockType="ForLoop" limit="-1" />
+    <blockLimit blockType="AndOperator" limit="0" />
+    <blockLimit blockType="OrOperator" limit="0" />
+    <blockLimit blockType="NotOperator" limit="-1" />
+    <blockLimit blockType="WallFront" limit="-1" />
+    <blockLimit blockType="Enemy" limit="0" />
+    <blockLimit blockType="Terminal" limit="-1" />
+    <blockLimit blockType="RedArea" limit="0" />
+    <blockLimit blockType="FieldGate" limit="0" />
+    <blockLimit blockType="Exit" limit="-1" />
+  </blockLimits>
+  <treadmill posY="2" posX="1" direction="2" />
+  <treadmill posY="2" posX="2" direction="2" />
+  <treadmill posY="2" posX="3" direction="2" />
+  <treadmill posY="2" posX="4" direction="2" />
+  <treadmill posY="2" posX="5" direction="2" />
+  <treadmill posY="2" posX="6" direction="2" />
+  <treadmill posY="2" posX="7" direction="2" />
+  <treadmill posY="2" posX="8" direction="2" />
+  <treadmill posY="2" posX="9" direction="2" />
+  <treadmill posY="3" posX="2" direction="3" />
+  <treadmill posY="3" posX="3" direction="3" />
+  <treadmill posY="3" posX="4" direction="3" />
+  <treadmill posY="3" posX="5" direction="3" />
+  <treadmill posY="3" posX="6" direction="3" />
+  <treadmill posY="3" posX="7" direction="3" />
+  <treadmill posY="3" posX="8" direction="3" />
+  <treadmill posY="3" posX="9" direction="3" />
+  <treadmill posY="3" posX="10" direction="3" />
+  <treadmill posY="4" posX="1" direction="2" />
+  <treadmill posY="4" posX="2" direction="2" />
+  <treadmill posY="4" posX="3" direction="2" />
+  <treadmill posY="4" posX="4" direction="2" />
+  <treadmill posY="4" posX="5" direction="2" />
+  <treadmill posY="4" posX="6" direction="2" />
+  <treadmill posY="4" posX="7" direction="2" />
+  <treadmill posY="4" posX="8" direction="2" />
+  <treadmill posY="4" posX="9" direction="2" />
+  <treadmill posY="5" posX="2" direction="3" />
+  <treadmill posY="5" posX="3" direction="3" />
+  <treadmill posY="5" posX="4" direction="3" />
+  <treadmill posY="5" posX="5" direction="3" />
+  <treadmill posY="5" posX="6" direction="3" />
+  <treadmill posY="5" posX="7" direction="3" />
+  <treadmill posY="5" posX="8" direction="3" />
+  <treadmill posY="5" posX="9" direction="3" />
+  <treadmill posY="5" posX="10" direction="3" />
+  <treadmill posY="6" posX="2" direction="3" />
+  <treadmill posY="6" posX="3" direction="3" />
+  <treadmill posY="6" posX="4" direction="3" />
+  <treadmill posY="6" posX="5" direction="3" />
+  <treadmill posY="6" posX="6" direction="3" />
+  <treadmill posY="6" posX="7" direction="3" />
+  <treadmill posY="6" posX="8" direction="3" />
+  <treadmill posY="6" posX="9" direction="3" />
+  <treadmill posY="6" posX="10" direction="3" />
+  <treadmill posY="7" posX="1" direction="2" />
+  <treadmill posY="7" posX="2" direction="2" />
+  <treadmill posY="7" posX="3" direction="2" />
+  <treadmill posY="7" posX="4" direction="2" />
+  <treadmill posY="7" posX="5" direction="2" />
+  <treadmill posY="7" posX="6" direction="2" />
+  <treadmill posY="7" posX="7" direction="2" />
+  <treadmill posY="7" posX="8" direction="2" />
+  <treadmill posY="7" posX="9" direction="2" />
+  <treadmill posY="8" posX="2" direction="3" />
+  <treadmill posY="8" posX="3" direction="3" />
+  <treadmill posY="8" posX="4" direction="3" />
+  <treadmill posY="8" posX="5" direction="3" />
+  <treadmill posY="8" posX="6" direction="3" />
+  <treadmill posY="8" posX="7" direction="3" />
+  <treadmill posY="8" posX="8" direction="3" />
+  <treadmill posY="8" posX="9" direction="3" />
+  <treadmill posY="8" posX="10" direction="3" />
+  <treadmill posY="9" posX="1" direction="2" />
+  <treadmill posY="9" posX="2" direction="2" />
+  <treadmill posY="9" posX="3" direction="2" />
+  <treadmill posY="9" posX="4" direction="2" />
+  <treadmill posY="9" posX="5" direction="2" />
+  <treadmill posY="9" posX="6" direction="2" />
+  <treadmill posY="9" posX="7" direction="2" />
+  <treadmill posY="9" posX="8" direction="2" />
+  <treadmill posY="9" posX="9" direction="2" />
+  <player associatedScriptName="Richter" posY="1" posX="2" direction="1" />
+  <player associatedScriptName="Karl" posY="10" posX="2" direction="0" />
+<score twoStars="3000" threeStars="4500" />
+</level>
