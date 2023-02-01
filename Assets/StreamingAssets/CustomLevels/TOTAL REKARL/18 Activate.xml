@@ -97,9 +97,9 @@ Richter : Voyons qui arrive le premier au réacteur !" />
   <script name="Richter" editMode="2" type="2">
 		<for nbFor="3">
 			<action type="Forward"/>
-			<action type="turnLeft"/>
+			<action type="TurnRight"/>
 			<action type="Forward"/>
-			<action type="turnRight"/>
+			<action type="TurnLeft"/>
 		</for>
 		<action type="Forward"/>
 	</script>
