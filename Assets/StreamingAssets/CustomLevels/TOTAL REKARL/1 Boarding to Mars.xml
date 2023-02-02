@@ -46,5 +46,5 @@
   <player associatedScriptName="Quentin" posY="5" posX="4" direction="0" />
   <script name="Quentin" editMode="2" type="2">
   </script>
-  <score twoStars="3000" threeStars="4500" />
+  <score twoStars="3000" threeStars="5400" />
 </level>

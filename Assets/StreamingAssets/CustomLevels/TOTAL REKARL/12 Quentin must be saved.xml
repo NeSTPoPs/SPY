@@ -70,5 +70,5 @@ Karl : Je reviens avec Quentin dès que je peux !" />
   <door posY="7" posX="7" slotId ="0" direction="2" />
   <player associatedScriptName="Alessia" posY="4" posX="4" direction="1" />
   <player associatedScriptName="Karl" posY="6" posX="4" direction="3" />
-<score twoStars="3000" threeStars="4500" />
+<score twoStars="3000" threeStars="3650" />
 </level>

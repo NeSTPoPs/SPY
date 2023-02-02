@@ -120,5 +120,5 @@
   <player associatedScriptName="Mutant" posY="8" posX="9" direction="2" />
   <player associatedScriptName="Mutant" posY="9" posX="3" direction="3" />
   <player associatedScriptName="Karl" posY="9" posX="7" direction="0" />
-<score twoStars="3000" threeStars="4500" />
+<score twoStars="3000" threeStars="3825" />
 </level>

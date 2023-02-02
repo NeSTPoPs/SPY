@@ -75,5 +75,5 @@ Karl : Oui. Je dois trouver Richter et découvrir ce qu’il prépare, il cache 
 		<action type="Forward"/>
 		<action type="Forward"/>
 	</script>
-<score twoStars="3000" threeStars="4500" />
+<score twoStars="3000" threeStars="4000" />
 </level>

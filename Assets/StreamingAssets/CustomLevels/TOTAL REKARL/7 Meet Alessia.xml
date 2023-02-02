@@ -91,5 +91,5 @@ Karl : Tu connais mon nom ? Tu peux me dire qui je suis ? J'ai perdu la mémoire
   <treadmill posY="6" posX="6" direction="0" />
   <player associatedScriptName="Alessia" posY="4" posX="3" direction="2" />
   <player associatedScriptName="Karl" posY="6" posX="1" direction="0" />
-<score twoStars="3000" threeStars="4500" />
+<score twoStars="3000" threeStars="4350" />
 </level>

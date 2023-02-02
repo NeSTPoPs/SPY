@@ -63,5 +63,5 @@
   <door posY="8" posX="8" slotId ="0" direction="1" />
   <player associatedScriptName="Quentin" posY="2" posX="3" direction="1" />
   <player associatedScriptName="Quaid" posY="4" posX="2" direction="3" />
-<score twoStars="3000" threeStars="4500" />
+<score twoStars="3000" threeStars="4125" />
 </level>

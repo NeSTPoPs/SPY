@@ -88,5 +88,5 @@ Karl : Je ne sais pas répondre, j'ai perdu la mémoire." />
   <player associatedScriptName="Mutant1" posY="7" posX="8" direction="3" />
   <player associatedScriptName="Karl" posY="8" posX="5" direction="0" />
   <player associatedScriptName="Mutant1" posY="8" posX="8" direction="3" />
-<score twoStars="3000" threeStars="4500" />
+<score twoStars="3000" threeStars="4100" />
 </level>

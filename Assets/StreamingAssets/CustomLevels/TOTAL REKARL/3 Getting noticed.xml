@@ -62,5 +62,5 @@
 			<action type="TurnRight"/>
 		</forever>
 	</script>
-<score twoStars="3000" threeStars="4500" />
+<score twoStars="3000" threeStars="4100" />
 </level>

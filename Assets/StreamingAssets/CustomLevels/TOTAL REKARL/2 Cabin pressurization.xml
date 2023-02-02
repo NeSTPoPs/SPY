@@ -18,7 +18,7 @@
     <blockLimit blockType="TurnLeft" limit="-1" />
     <blockLimit blockType="TurnRight" limit="-1" />
     <blockLimit blockType="TurnBack" limit="0" />
-    <blockLimit blockType="Activate" limit="2" />
+    <blockLimit blockType="Activate" limit="1" />
     <blockLimit blockType="Wait" limit="0" />
     <blockLimit blockType="IfThen" limit="0" />
     <blockLimit blockType="IfElse" limit="0" />
@@ -61,5 +61,5 @@
 	  <action type="Activate"/>
   </script>
   <player associatedScriptName="Quaid" posY="4" posX="6" direction="3" />
-<score twoStars="3000" threeStars="4500" />
+<score twoStars="3000" threeStars="4600" />
 </level>

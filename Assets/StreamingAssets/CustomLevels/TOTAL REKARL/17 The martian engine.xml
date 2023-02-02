@@ -115,5 +115,5 @@ Richter : C’est un réacteur construit par les martiens pour créer l’atmosp
   <treadmill posY="9" posX="9" direction="2" />
   <player associatedScriptName="Richter" posY="1" posX="2" direction="1" />
   <player associatedScriptName="Karl" posY="10" posX="2" direction="0" />
-<score twoStars="3000" threeStars="4500" />
+<score twoStars="3000" threeStars="3350" />
 </level>
