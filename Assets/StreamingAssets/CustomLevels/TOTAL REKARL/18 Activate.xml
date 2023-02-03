@@ -173,5 +173,15 @@
 			<action type="Forward"/>
 		</for>
 	</script>
+	 <enemy associatedScriptName="Guarde" posY="6" posX="9" direction="3" range="1" selfRange="False" typeRange="0" />
+    <script name="Guarde">
+	    <forever>
+		    <action type="Forward"/>
+			<action type="Forward"/>
+		    <action type="TurnRight"/>
+			<action type="Forward"/>
+		    <action type="TurnRight"/>
+	    </forever>
+    </script>
 <score twoStars="3000" threeStars="3950" />
 </level>
